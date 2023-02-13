@@ -18,7 +18,8 @@
           Особенности питания
         </label>
       </div>
-      <span class="material-symbols-outlined me-4 d-none d-xxl-block text-secondary">info</span>
+      <ng-template #tipContent>требующие учета при предоставлении питания</ng-template>
+      <span class="material-symbols-outlined me-4 d-none d-xxl-block text-secondary" [ngbTooltip]="tipContent">info</span>
       <div class="me-4 d-none d-xl-block">
         <span>Л/c {{ child.account }}: </span>
         <strong>{{ child.balance }} руб</strong>
