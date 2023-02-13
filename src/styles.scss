@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'assets/custom-variables.scss';
+@import 'bootstrap/scss/bootstrap';
+
+.form-check-input {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F2F2F2 100%);
+}

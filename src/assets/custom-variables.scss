@@ -1,0 +1,28 @@
+// scss-docs-start theme-color-variables
+$primary:#115894 !default;
+
+$body-color: #333333 !default;
+
+// scss-docs-start border-radius-variables
+$border-radius: 0 !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-y: .462rem !default;
+
+// scss-docs-start form-input-variables
+$input-border-color: #D6DADE !default;
+// scss-docs-end form-input-variables
+
+
+// scss-docs-start form-check-variables
+$form-check-input-width: 1.25em !default;
+$form-check-input-border: 1px solid #CDCDCD !default;
+$form-check-input-border-radius: 0 !default;
+// scss-docs-end form-check-variables
