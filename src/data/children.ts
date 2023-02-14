@@ -6,6 +6,7 @@ export const children: iChild[] = [
         title: "Алексей Карамазов",
         balance: 1500,
         account: 9390410,
-        brothers: ["Дмитрий Карамазов", "Иван Карамазов"]
+        features: false,
+        siblings: ["Дмитрий Карамазов", "Иван Карамазов"]
     }
 ]

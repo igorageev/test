@@ -3,5 +3,6 @@ export interface iChild {
     title: string
     balance: number
     account: number
-    brothers: Array<string>
+    features: boolean
+    siblings: Array<string>
 }

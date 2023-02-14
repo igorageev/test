@@ -1,16 +1,24 @@
+<!-- Панель для выбора детей -->
+
 <nav class="navbar sticky-top navbar-expand-lg bg-white border-bottom">
   <div class="container-fluid px-4 py-2">
-
+    
+    <!-- Список детей -->
     <div class="d-inline-block col-6 col-xl-4" ngbDropdown #myDrop="ngbDropdown">
       <button type="button" class="btn btn-outline-secondary col-12 d-flex justify-content-between align-items-center"
         id="dropdownChildren" ngbDropdownAnchor (focus)="myDrop.open()">
-        <span><span class="marker"></span>{{ child.title }}</span>
+        <span>
+          <span class="marker"></span> <!-- Маркер посещения школы -->
+          {{ child.title }} <!-- Текущий ребенок -->
+        </span>
       </button>
+      <!-- TODO: реализовать переключение между детьми -->
       <div ngbDropdownMenu aria-labelledby="dropdownChildren">
-        <button *ngFor="let item of child.brothers" ngbDropdownItem>{{ item }}</button>
+        <button *ngFor="let item of child.siblings" ngbDropdownItem>{{ item }}</button>
       </div>
     </div>
 
+    <!-- Флаг наличия особенностей питания у ребенка -->
     <div class="d-flex align-items-center">
       <div class="form-check me-2 d-none d-xxl-block">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -20,10 +28,15 @@
       </div>
       <ng-template #tipContent>требующие учета при предоставлении питания</ng-template>
       <span class="material-symbols-outlined me-4 d-none d-xxl-block text-secondary" [ngbTooltip]="tipContent">info</span>
+
+      <!-- Баланс лицевого счета -->
       <div class="me-4 d-none d-xl-block">
         <span>Л/c {{ child.account }}: </span>
         <strong>{{ child.balance }} руб</strong>
       </div>
+
+      <!-- Баланс лицевого счета -->
+      <!-- TODO: привязать действия к кнопкам -->
       <button type="button" class="btn btn-link me-xl-4">Подробности</button>
       <button type="button" class="btn btn-primary d-none d-xl-block px-4">Пополнить</button>
     </div>
