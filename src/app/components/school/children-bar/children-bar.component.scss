@@ -7,3 +7,17 @@
     margin-right: 15px;
     margin-left: 5px;
 }
+
+.btn-outline-secondary {
+    border-color: #D6DADE;
+}
+
+.dropdown-toggle::after {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    content: "expand_more";
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    border: none;
+}
